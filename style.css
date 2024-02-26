@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+section {
+  height: auto;
+}
+
+body {
+  background-color: #eaeaea;
+}
+
+.container {
+  display: flex;
+  margin-top: 8%;
+  background-color: #f6eada;
+  height: 400px;
+  position: relative;
+}
+.container .bg-aboutUs {
+  position: absolute;
+  filter: saturate(7500%) sepia(100%) opacity(30%);
+  width: 100%;
+}
+.container .content-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.container .content-left img {
+  width: 275px;
+  position: absolute;
+  bottom: 18%;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.container .content-right {
+  padding-top: 5%;
+  padding-left: 2%;
+  width: 50%;
+  position: relative;
+}
+.container .content-right h1 {
+  letter-spacing: 0.5px;
+}
+.container .content-right span {
+  -webkit-text-decoration: underline sandybrown 3px;
+          text-decoration: underline sandybrown 3px;
+}
+.container .content-right h3 {
+  width: 275px;
+  margin-top: 2%;
+}
+.container .content-right p {
+  color: gray;
+  width: 70%;
+  margin-top: 2%;
+}
+.container .content-right button {
+  padding: 8px 20px;
+  border-radius: 40px;
+  border: none;
+  color: sandybrown;
+  font-weight: 600;
+  background-color: #2f0106;
+  margin-top: 4%;
+  cursor: pointer;
+}
+
+.second-container h1 {
+  margin-left: 7%;
+  margin-top: 7%;
+  letter-spacing: 0.5px;
+}
+.second-container h1 span {
+  border-bottom: 3px solid sandybrown;
+}
+.second-container .row {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  margin-block: 3%;
+}
+.second-container .row .card {
+  width: 310px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 1.5px 1.5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+.second-container .row .card img {
+  width: 100%;
+  display: flex;
+  margin-inline: auto;
+  border-radius: 10px;
+}
+.second-container .row .card .rating-transparent {
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 4px;
+  border-radius: 40px;
+  position: absolute;
+  top: 8%;
+  left: 9%;
+}
+.second-container .row .card .rating-transparent .rating {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 4px;
+  border-radius: 40px;
+}
+.second-container .row .card .rating-transparent .rating .rating-value {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+.second-container .row .card .rating-transparent .rating img {
+  width: 30%;
+}
+.second-container .row .card .card-title {
+  width: 100%;
+  padding-inline: 8px;
+  padding-block: 12px;
+}
+.second-container .row .card .card-title h5 {
+  font-size: 20px;
+  color: #463a24;
+  letter-spacing: 0.5px;
+}
+.second-container .row .card .card-title h5 .price {
+  float: right;
+}
+.second-container .row .card .card-body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2%;
+}
+.second-container .row .card .card-body p {
+  color: gray;
+  font-size: 14px;
+}
+.second-container .row .card .card-body .cart {
+  background-color: #ff902a;
+  z-index: 1;
+  font-size: 25px;
+  width: 40px;
+  padding: 4px;
+  height: 40px;
+  border-radius: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 7%;
+  }
+  .container .bg-aboutUs {
+    display: none;
+  }
+  .container .content-left {
+    width: 100%;
+  }
+  .container .content-left img {
+    position: unset;
+  }
+  .container .content-right {
+    padding-block: 24px;
+    padding-inline: 24px;
+    width: 100%;
+  }
+  .container .content-right h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .container .content-right h3 {
+    width: 100%;
+    font-size: 25px;
+  }
+  .container .content-right p {
+    width: 100%;
+    font-size: 20px;
+  }
+  .second-container h1 {
+    font-size: 30px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .second-container .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .second-container .row .card {
+    margin-block: 4%;
+  }
+}/*# sourceMappingURL=style.css.map */
